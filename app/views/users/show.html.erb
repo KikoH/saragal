@@ -1,0 +1,7 @@
+<%= @user.email %>
+
+<%= @user.first_name %>
+
+<% if can?(:manage, :all) %>
+<%= @user.last_name %>
+<% end %>
