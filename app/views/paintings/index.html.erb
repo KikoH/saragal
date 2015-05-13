@@ -1,2 +1,20 @@
-<h1> All paintings </h1>
+<div id="tag_cloud" class="text-center">
+	<h1> All paintings </h1>
+</div>
+
+<div class="container">
+	<div class="row">
+		<% @paintings.each do |painting| %>
+		<div class="col-sm-6 col-md-4">
+			<div class="thumbnail">
+				<img src="<%= painting.image_url %>" alt="...">
+				<div class="caption">
+					<h3> <%= link_to painting.title, painting_path(painting) %> </h3>
+					<p><%= painting.description %></p>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>
 

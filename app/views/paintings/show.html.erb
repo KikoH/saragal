@@ -1,3 +1,9 @@
-<h1> <%= @painting.title %> </h1>
-
-<%= image_tag @painting.image_url %>
+<div class="container">
+	<div class="thumbnail">
+		<%= image_tag @painting.image_url %>
+		<div class="caption text-center">
+			<h1> <%= @painting.title %> </h1>
+			<p><%= @painting.description %></p>
+		</div>
+	</div>
+</div>
