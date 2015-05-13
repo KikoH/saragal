@@ -12,6 +12,13 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*
-!/log/.keep
+/log/*.log
 /tmp
+
+# Ignore jpeg/jpg/png
+*.jpeg
+*.jpg
+*.png
+
+#Ignore secrets.yml
+/config/secrets.yml
