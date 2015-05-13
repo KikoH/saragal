@@ -1,0 +1,13 @@
+<%= form_for @painting do |f| %>
+
+<%= f.text_field :title, placeholder: 'Title' %>
+
+<%= f.text_area :description, placeholder: 'Description' %>
+
+<%= f.number_field :price %>
+
+Add the image: <%= f.file_field :image %>
+
+<%= f.submit %>
+<% end %>
+</form>

@@ -15,7 +15,7 @@ class PaintingsController < ApplicationController
 	end
 
 	def create
-		@painting = Paiting.new(painting_params)
+		@painting = Painting.new(painting_params)
 
 		if @painting.save
 			redirect_to paintings_path
