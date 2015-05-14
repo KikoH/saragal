@@ -8,4 +8,8 @@ class User < ActiveRecord::Base
 	validates :email, uniqueness: true
 
 	has_many :paintings
+
+	def full_name
+		first_name + " " + last_name
+	end
 end
