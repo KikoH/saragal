@@ -38,7 +38,7 @@ class UsersController < ApplicationController
 	def destroy
 		@user = User.find(params[:id])
 		@user.destroy
-		redirect_to paintings_path
+		redirect_to paintings_paths
 	end
 
 	private
