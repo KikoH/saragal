@@ -25,6 +25,16 @@ class PaintingsController < ApplicationController
 		end
 	end
 
+	def edit
+		@painting =  Painting.find(params[:id])
+	end
+
+	def update
+		@painting =  Painting.find(params[:id])
+		@painting.update_attributes(painting_params)
+		redirect_to painting_path(@painting)
+	end
+
 	private
 	def painting_params
 		params.require(:painting).permit(:title, :description, :price, :user_id, :image, :order_id)
