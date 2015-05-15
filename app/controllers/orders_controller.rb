@@ -7,9 +7,11 @@ class OrdersController < ApplicationController
 		@order = Order.new(order_params)
 		@painting = @order.painting
 		if @order.save
-			redirect_to painting_path(@painting) 
+			@painting.order_id = @order.id
+			@painting.save
+			redirect_to painting_path(@painting)
 		else
-			redirect_to painting_path(@painting) 
+			redirect_to painting_path(@painting)
 		end
 	end
 

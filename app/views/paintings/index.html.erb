@@ -12,6 +12,9 @@
 					<h3> <%= link_to painting.title, painting_path(painting) %> </h3>
 					<p><%= painting.description %></p>
 				</div>
+				<% if painting.addedToCart(painting) %>
+				<h1 style="color:red">SOLD</h1>
+				<% end %>
 			</div>
 		</div>
 		<% end %>

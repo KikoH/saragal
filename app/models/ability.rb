@@ -10,6 +10,7 @@ class Ability
     else
       can :read, Painting
       can :read, User
+      can :create, User
       can :update, User
     end
 
