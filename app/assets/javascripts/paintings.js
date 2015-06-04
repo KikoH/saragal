@@ -1,9 +1,6 @@
-$(window).ready(function(){
+$(document).ready(function(){
 	$('#book').turn({
-		display: 'double',
-		duration: '600',
-		gradients: true,
-		elevation: 0
+		autoCenter: false
 	});
 });
 

@@ -1,4 +1,12 @@
 #book {
-    width: 800px;
-    height: 400px;
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    background-color: pink;
+}
+
+
+#book div{
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
 }

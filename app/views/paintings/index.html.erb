@@ -2,26 +2,28 @@
 	<h1> All paintings </h1>
 </div>
 
-<div class="container">
+<!-- <div class="container">
 	<div class="row">
-		<% @paintings.each do |painting| %>
+		<%# @paintings.each do |painting| %>
 		<div class="col-sm-6 col-md-4">
 			<div class="thumbnail">
-				<img src="<%= painting.image_url %>" alt="...">
+				<img src="<%#= painting.image_url %>" alt="...">
 				<div class="caption">
-					<h3> <%= link_to painting.title, painting_path(painting) %> </h3>
-					<p><%= painting.description %></p>
+					<h3> <%#= link_to painting.title, painting_path(painting) %> </h3>
+					<p><%#= painting.description %></p>
 				</div>
-				<% if painting.addedToCart(painting) %>
+				<%# if painting.addedToCart(painting) %>
 				<h1 style="color:red">SOLD</h1>
-				<% end %>
+				<%# end %>
 			</div>
 		</div>
-		<% end %>
+		<%# end %>
 	</div>
-
-	<div id="book">
-		<div style="background-image:url('https://s3.amazonaws.com/kikoportfolio/kiko.jpg');"></div>
-		<div style="background-image:url('https://s3.amazonaws.com/kikoportfolio/kiko2.jpeg');"></div>
-	</div>
+-->
+<div id="book">
+	<div style="background-image:url('https://s3.amazonaws.com/saragallery/gal.jpg'); background-size: 100% 100%;"></div>
+	<div></div>
+	<% @paintings.each do |painting| %>
+	<div style="background-image:url('<%= painting.image_url%>');"></div>
+	<% end %>
 </div>
