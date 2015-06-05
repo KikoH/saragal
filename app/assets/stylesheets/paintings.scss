@@ -1,25 +1,37 @@
 #container {
-	width: 1300px;
-	height: 1100px;
+	width: 1080px;
+	height: 600px;
 	margin-left: 5%;
 }
 
 #book {
 	width: 100%;
 	height: 100%;
+	background-color: white;
 }
 
 #book div{
-	background-size: 90% 90%;
-	background-attachment: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
+#book h2 {
+	text-align: center;
+	position: relative;
+	bottom: -500px;
+	width: 100%;
+	background-color: white;
+}
 
-@media screen and (max-width: 1024px), screen and (max-height: 640px) {
+#book a {
+	width: 100%;
+}
+
+
+/*@media screen and (max-width: 1024px), screen and (max-height: 640px) {
 	#container {
 		width: 400px;
 		height: 400px;
 		margin-left: 5%;
 	}
-}
+}*/

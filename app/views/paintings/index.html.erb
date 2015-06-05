@@ -24,7 +24,7 @@
 <div id="book">
 	<div style="background-image:url('https://s3.amazonaws.com/saragallery/gal.jpg'); background-size: 100% 100%;"></div>
 	<% @paintings.each do |painting| %>
-		<div style="background-image:url('<%= painting.image_url%>');"></div>
+		<div style="background-image:url('<%= painting.image_url%>');"><h2><%= link_to painting.title, painting_path(painting) %></h2></div>
 		<% end %>
 	</div>
 </div>
