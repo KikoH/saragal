@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	$('#book').turn({
-		autoCenter: false
+		display: 'double',
+		autoCenter: true
 	});
+
 });
 
 $(window).bind('keydown', function(e) {
