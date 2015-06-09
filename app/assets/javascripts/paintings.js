@@ -1,6 +1,5 @@
 var ready = function() {
 	$('#book').turn({
-		display: 'double',
 		autoCenter: true
 	});
 };
