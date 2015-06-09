@@ -1,4 +1,4 @@
-#container {
+#book-container {
 	width: 1080px;
 	height: 600px;
 	margin-left: 5%;
@@ -11,27 +11,19 @@
 }
 
 #book div{
+	position: relative;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 #book h2 {
-	text-align: center;
-	position: relative;
-	bottom: -500px;
-	width: 100%;
+	position: absolute;
 	background-color: white;
+	width: 50%;
+	bottom: 0;
+	right: 50px;
 }
 
 #book a {
 	width: 100%;
 }
-
-
-/*@media screen and (max-width: 1024px), screen and (max-height: 640px) {
-	#container {
-		width: 400px;
-		height: 400px;
-		margin-left: 5%;
-	}
-}*/
