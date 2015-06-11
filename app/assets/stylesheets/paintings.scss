@@ -3,21 +3,28 @@ body {
 }
 
 #book-container {
-	width: 1080px;
-	height: 600px;
-	margin-left: 5%;
+	display: block;
+	width: 875px;
+	height: 700px;
+	margin: auto;
+	overflow: hidden;
 }
 
 #book {
 	width: 100%;
 	height: 100%;
+	.page{
+		background-size: cover;
+		background-position: center center;
+	}
 }
 
-#book img{
+.page img{
 	position: relative;
 	height: 100%;
 	width: 100%;
 	background-size: contain;
+	opacity: 0;
 	background-repeat: no-repeat;
 }
 

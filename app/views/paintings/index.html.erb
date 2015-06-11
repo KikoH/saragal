@@ -20,7 +20,7 @@
 	<div id="book">
 		<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
 		<% @paintings.each do |painting| %>
-		<div>
+		<div class="page" style="background-image: url('<%= painting.image_url%>');">
 		<div class="mask">
 				<h2><%= link_to painting.title, painting_path(painting) %></h2>
 			</div>
@@ -28,4 +28,5 @@
 		</div>
 		<% end %>
 	</div>
+
 </div>
