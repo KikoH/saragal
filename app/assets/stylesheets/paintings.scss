@@ -4,8 +4,8 @@ body {
 
 #book-container {
 	display: block;
-	width: 875px;
-	height: 700px;
+	width: 960px;
+	height: 720px;
 	margin: auto;
 	overflow: hidden;
 }
@@ -17,6 +17,10 @@ body {
 		background-size: cover;
 		background-position: center center;
 	}
+}
+
+.coverback img{
+	opacity: 1 !important;
 }
 
 .page img{

@@ -18,15 +18,25 @@
 -->
 <div id="book-container">
 	<div id="book">
-		<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
 		<% @paintings.each do |painting| %>
 		<div class="page" style="background-image: url('<%= painting.image_url%>');">
-		<div class="mask">
+			<div class="mask">
 				<h2><%= link_to painting.title, painting_path(painting) %></h2>
 			</div>
 			<img src="<%= painting.image_url%>" alt="">
 		</div>
 		<% end %>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
 	</div>
-
 </div>
