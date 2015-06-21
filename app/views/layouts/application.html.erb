@@ -14,14 +14,14 @@
 		<div id="sidebar-wrapper">
 			<ul class="sidebar-nav">
 				<li class="sidebar-brand">
-					<%= link_to "Sara's Gallery", paintings_path %> 
+					Sara Land
 				</li>
 				<% if current_user %>
 				<li>
 					<%= current_user.full_name %>
 				</li>
 				<li>
-					<% if @user == current_user %>
+					<% if current_user %>
 					<%= link_to "Edit Profile", edit_user_path(current_user.id) %>
 					<% end %>
 				</li>
@@ -36,6 +36,18 @@
 					<%= link_to "Login", :login %>
 				</li>
 				<% end %>
+				<li>
+					------------
+				</li>
+				<li>
+					<%= link_to "Paintings", paintings_path %>
+				</li>
+				<li>
+					Graphic Design
+				</li>
+				<li>
+					Photography
+				</li>
 			</ul>
 		</div>
 		<!-- /#sidebar-wrapper -->
