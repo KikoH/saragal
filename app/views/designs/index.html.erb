@@ -1,0 +1,18 @@
+<div id="book-container">
+	<div id="book">
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+		<% @designs.each do |design| %>
+		<div class="page" style="background-image: url('<%= design.image_url%>');">
+			<div class="mask">
+				<h2><%= link_to design.title, design_path(design) %></h2>
+			</div>
+			<img src="<%= design.image_url%>" alt="">
+		</div>
+		<% end %>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+	</div>
+</div>
