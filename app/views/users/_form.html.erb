@@ -10,7 +10,9 @@
 
 <%= f.password_field :password_confirmation, placeholder: 'Password confirmation' %>
 
+<% if current_user.admin %>
 Admin: <%= f.check_box :admin %>
+<% end %>
 
 <%= f.submit %>
 <% end %>

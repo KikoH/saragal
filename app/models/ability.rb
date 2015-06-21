@@ -9,7 +9,8 @@ class Ability
       can :manage, :all
     else
       can :read, Painting
-      can :read, User
+      can :read, Photo
+      can :read, Design
       can :create, User
       can :update, User
     end
