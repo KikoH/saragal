@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :paintings
   resources :photos
+  resources :graphicdesigns
   resources :orders
 
   get 'login' => 'user_sessions#new', as: :login
