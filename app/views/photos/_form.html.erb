@@ -1,0 +1,11 @@
+<%= form_for @photo do |f| %>
+
+<%= f.text_field :title, placeholder: 'Title' %>
+
+<%= f.text_area :description, placeholder: 'Description' %>
+
+Add the image: <%= f.file_field :image %>
+
+<%= f.submit %>
+<% end %>
+</form>

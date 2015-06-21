@@ -1,0 +1,24 @@
+<div id="book-container">
+	<div id="book">
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+		<% @photos.each do |photo| %>
+		<div class="page" style="background-image: url('<%= photo.image_url%>');">
+			<div class="mask">
+				<h2><%= link_to photo.title, photo_path(photo) %></h2>
+			</div>
+			<img src="<%= photo.image_url%>" alt="">
+		</div>
+		<% end %>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+		<div class="coverback">
+			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+		</div>
+	</div>
+</div>
