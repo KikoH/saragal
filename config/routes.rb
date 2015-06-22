@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root :to => 'homepages#index'
   resources :users
   resources :user_sessions
 
@@ -7,6 +8,8 @@ Rails.application.routes.draw do
   resources :photos
   resources :designs
   resources :orders
+
+  get 'home' => 'homepages#index', :as => :home
 
   get 'login' => 'user_sessions#new', as: :login
   post 'logout' => 'user_sessions#destroy', as: :logout
