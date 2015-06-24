@@ -13,4 +13,8 @@ class User < ActiveRecord::Base
 	def full_name
 		first_name + " " + last_name
 	end
+
+	def pretty_created_at
+		created_at.strftime("%b %d, %Y")
+	end
 end
