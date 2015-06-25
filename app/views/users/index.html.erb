@@ -1,9 +1,21 @@
 <h1>All users</h1>
-
-<% @users.each do |user| %>
-<li>
-	<%= user.full_name %>
-	<%= user.email %>
-	<%= user.pretty_created_at %>
-</li>
-<% end %>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Full name</th>
+			<th>Email</th>
+			<th>Created at</th>
+		</tr>
+	</thead>
+	<% @users.each do |user| %>
+	<tbody>
+		<tr>
+			<th scope="row"><%= user.id %></th>
+			<td><%= user.full_name %></td>
+			<td><%= user.email %></td>
+			<td><%= user.pretty_created_at %></td>
+		</tr>
+	</tbody>
+	<% end %>
+</table>
