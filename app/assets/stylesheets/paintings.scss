@@ -1,5 +1,4 @@
 body {
-	overflow: hidden;
 	background-image: url("https://s3.amazonaws.com/saragallery/5.jpg");
 }
 
@@ -17,7 +16,7 @@ body {
 	width: 40%;
 	height: 40%;
 	float: left;
-	margin: 0 5%;
+	margin: 5% 5%;
 }
 
 .infotop {
@@ -27,12 +26,13 @@ body {
 
 .infobottom {
 	line-height: 40px;
-	margin: 20% 10%;
+	margin: 15% 10%;
 }
 
 /* Magazine-book CSS */
 
 #book-container {
+	overflow: hidden;
 	display: block;
 	width: 960px;
 	height: 720px;
@@ -83,4 +83,21 @@ body {
 
 .form-horizontal {
 	position: relative;
+}
+
+/*Show page*/
+
+#email {
+	margin: auto;
+}
+
+#password {
+	margin: auto;
+}
+
+.login {
+	display: block;
+	width: 50%;
+	height: 50%;
+	margin: auto;
 }

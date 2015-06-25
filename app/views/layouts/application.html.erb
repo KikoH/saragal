@@ -37,20 +37,20 @@
 				</li>
 				<% end %>
 				<li>
-					------------
+					-------------
 				</li>
 				<li>
-					<%= link_to "Paintings", paintings_path %>
+					<%= link_to 'Paintings', paintings_path, {data: {:'no-turbolink' => true}} %>
 				</li>
 				<li>
-					<%= link_to "Graphic Design", designs_path %>
+					<%= link_to "Graphic Design", designs_path, {data: {:'no-turbolink' => true}} %>
 				</li>
 				<li>
-					<%= link_to "Photography", photos_path %>
+					<%= link_to "Photography", photos_path, {data: {:'no-turbolink' => true}} %>
 				</li>
 				<% if current_user.present? && current_user.admin %>
 				<li>
-					-----Admin-------
+					----Admin----
 				</li>
 				<li>
 					<%= link_to "All users", users_path %>
