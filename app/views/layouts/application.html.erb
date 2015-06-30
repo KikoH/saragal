@@ -48,6 +48,14 @@
 				<li>
 					<%= link_to "Photography", photos_path, {data: {:'no-turbolink' => true}} %>
 				</li>
+				<li>
+					-------------
+				</li>
+				<li>
+					<a href="mailto:saragazzaz@gmail.com?" target="_top">
+						<button class="btn btn-success">Contact me</button>
+					</a>
+				</li>
 				<% if current_user.present? && current_user.admin %>
 				<li>
 					----Admin----

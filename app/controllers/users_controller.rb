@@ -12,7 +12,8 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
-			redirect_to(:users, notice: 'User was successfully created')
+			redirect_to(root_path)
+			auto_login(@user)
 		else
 			render 'new', :notice => "Error signing up"
 		end

@@ -5,10 +5,7 @@
 			<h1> <%= @painting.title %> </h1>
 			<p><%= @painting.description %></p>
 		</div>
-		<% if @painting.addedToCart(@painting) %>
-		<h1 style="color:red">SOLD</h1>
-		<% else %>
-		<%= button_to "Add to Cart", orders_path(:order => {user_id: current_user.id, painting_id: @painting}), {:class => "btn btn-success" } %>
-		<% end %>
+		<a href="mailto:saragazzaz@gmail.com?subject=Regarding <%= @painting.title%>" target="_top">
+		<button class="btn btn-success">Contact Me about this</button>
+		</a>
 	</div>
-</div>
