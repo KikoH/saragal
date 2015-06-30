@@ -4,8 +4,8 @@
 		<div class="caption text-center">
 			<h1> <%= @painting.title %> </h1>
 			<p><%= @painting.description %></p>
+			<a href="mailto:saragazzaz@gmail.com?subject=Regarding <%= @painting.title%>" target="_top">
+				<button class="btn btn-success">Contact Me about this</button>
+			</a>
 		</div>
-		<a href="mailto:saragazzaz@gmail.com?subject=Regarding <%= @painting.title%>" target="_top">
-		<button class="btn btn-success">Contact Me about this</button>
-		</a>
 	</div>
