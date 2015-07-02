@@ -1,9 +1,6 @@
 <div id="book-container">
 	<div id="book">
-		<div class="coverback">
-			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
-		</div>
-		<div class="coverback">
+		<div class="coverback hard">
 			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
 		</div>
 		<% @photos.each do |photo| %>
@@ -14,10 +11,7 @@
 			<img src="<%= photo.image_url%>" alt="">
 		</div>
 		<% end %>
-		<div class="coverback">
-			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
-		</div>
-		<div class="coverback">
+		<div class="coverback hard">
 			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
 		</div>
 	</div>

@@ -1,0 +1,11 @@
+<div class="container-fluid fill">
+	<div class="thumbnail">
+		<%= image_tag @design.image_url(:large) %>
+		<div class="caption text-center">
+			<h1> <%= @design.title %> </h1>
+			<p><%= @design.description %></p>
+			<a href="mailto:saragazzaz@gmail.com?subject=Regarding <%= @design.title%>" target="_top">
+				<button class="btn btn-success">Contact Me about this</button>
+			</a>
+		</div>
+	</div>

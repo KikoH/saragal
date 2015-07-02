@@ -1,1 +1,11 @@
-1 Painting
+<div class="container-fluid fill">
+	<div class="thumbnail">
+		<%= image_tag @photo.image_url(:large) %>
+		<div class="caption text-center">
+			<h1> <%= @photo.title %> </h1>
+			<p><%= @photo.description %></p>
+			<a href="mailto:saragazzaz@gmail.com?subject=Regarding <%= @photo.title%>" target="_top">
+				<button class="btn btn-success">Contact Me about this</button>
+			</a>
+		</div>
+	</div>
