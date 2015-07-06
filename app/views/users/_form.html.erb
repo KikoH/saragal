@@ -16,9 +16,9 @@
 	<div class="form-group">
 		<%= f.password_field :password_confirmation, class: "form-control", placeholder: 'Password confirmation' %>
 	</div>
-	
+	<% if current_user.present? && current_user.admin %>
 	Admin: <%= f.check_box :admin %>
-	
+	<% end %>
 	<%= f.submit "Register", class: "btn btn-success" %>
 </form>
 <% end %>
