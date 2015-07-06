@@ -7,6 +7,7 @@ class PaintingsController < ApplicationController
 	end
 
 	def show
+		@overflow = true
 		@painting = Painting.find(params[:id])
 	end
 

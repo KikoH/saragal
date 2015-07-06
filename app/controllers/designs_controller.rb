@@ -7,6 +7,7 @@ class DesignsController < ApplicationController
 	end
 
 	def show
+		@overflow = true
 		@design = Design.find(params[:id])
 	end
 

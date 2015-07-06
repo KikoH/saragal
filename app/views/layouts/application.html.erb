@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<%= csrf_meta_tags %>
 </head>
-<body>
-
+<body class="<%= @overflow ? 'overflow' : ''%>">
 	<div id="wrapper">
 		<!-- Sidebar -->
 		<div id="sidebar-wrapper">
@@ -40,13 +40,13 @@
 					-------------
 				</li>
 				<li>
-					<%= link_to 'Paintings', paintings_path, {data: {:'no-turbolink' => true}} %>
+					<%= link_to 'Paintings', paintings_path %>
 				</li>
 				<li>
-					<%= link_to "Graphic Design", designs_path, {data: {:'no-turbolink' => true}} %>
+					<%= link_to "Graphic Design", designs_path %>
 				</li>
 				<li>
-					<%= link_to "Photography", photos_path, {data: {:'no-turbolink' => true}} %>
+					<%= link_to "Photography", photos_path %>
 				</li>
 				<li>
 					-------------

@@ -7,6 +7,7 @@ class PhotosController < ApplicationController
 	end
 
 	def show
+		@overflow = true
 		@photo = Photo.find(params[:id])
 	end
 
