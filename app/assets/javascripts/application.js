@@ -15,4 +15,3 @@
 //= require jquery_ujs
 //= require turn
 //= require turbolinks
-//= require_tree .
