@@ -36,6 +36,12 @@ class DesignsController < ApplicationController
 		redirect_to hoto_path(@design)
 	end
 
+	def method_name
+		@design = Design.find(params[:id])
+		@design.destroy
+		redirect_to designs_path
+	end
+
 	private
 	def design_params
 		params.require(:design).permit(:title, :description, :user_id, :image)

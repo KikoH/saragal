@@ -63,6 +63,7 @@
         plugins: function () {
             // run the plugin
             $(this.el).turn({
+                autoCenter: true,
                 gradients: true,
                 acceleration: true
             });

@@ -1,7 +1,7 @@
 <div id="book-container">
 	<div id="book">
 		<div class="coverback hard">
-			<img src="https://s3.amazonaws.com/saragallery/magazine.png" alt="">
+			<img src="https://s3.amazonaws.com/saragallery/graphiccover.png" alt="">
 		</div>
 		<% @designs.each do |design| %>
 		<div class="page" style="background-image: url('<%= design.image_url%>');">
@@ -12,7 +12,7 @@
 		</div>
 		<% end %>
 		<div class="coverback hard">
-			<img src="https://s3.amazonaws.com/saragallery/gal.jpg" alt="">
+			<img src="https://s3.amazonaws.com/saragallery/backcover.png" alt="">
 		</div>
 	</div>
 </div>
