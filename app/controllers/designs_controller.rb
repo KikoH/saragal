@@ -36,7 +36,7 @@ class DesignsController < ApplicationController
 		redirect_to hoto_path(@design)
 	end
 
-	def method_name
+	def destroy
 		@design = Design.find(params[:id])
 		@design.destroy
 		redirect_to designs_path

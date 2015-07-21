@@ -8,10 +8,10 @@
 				<button class="btn btn-success">Contact Me about this</button>
 			</a>
 		</div>
-
+		<% content_for :show do %>
 		<% if current_user.present? && current_user.admin %>
-		<%= link_to "edit", edit_design_path(@design) %>
-		<%= link_to "Delete", @design, method: :delete, data: { confirm: "Are you sure you want to delete this design?" } %>
+		<%= button_to "edit", edit_design_path(@design), method: :get, class: "btn" %>
+		<%= button_to "Delete", @design, method: :delete, data: { confirm: "Are you sure you want to delete this design?" }, class: "btn" %>
 		<% end %>
-
+		<%end %>
 	</div>
