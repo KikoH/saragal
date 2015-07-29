@@ -38,8 +38,10 @@
         },
         resize: function () {
             // reset the width and height to the css defaults
+            if (this.el.style.width) {
             this.el.style.width = '';
             this.el.style.height = '';
+        }
 
             var width = this.el.clientWidth,
                 height = Math.round(width / this.ratio),
