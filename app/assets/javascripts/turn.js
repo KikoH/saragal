@@ -12,7 +12,7 @@
 'use strict';
 
 var has3d,
-  
+
   hasRot,
 
   vendor = '',
@@ -80,7 +80,7 @@ var has3d,
     // First page
 
     page: 1,
-    
+
     // Enables gradients
 
     gradients: true,
