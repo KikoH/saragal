@@ -1,19 +1,3 @@
-// var ready = function() {
-// 	$('#book').turn({
-// 		autoCenter: true
-// 	});
-// };
-
-// $(document).ready(ready);
-// $(document).on('page:load', ready);
-
-// $(window).bind('keydown', function(e) {
-// 	if (e.keyCode== 37)
-// 		$('#book').turn('previous');
-// 	else if (e.keyCode==39)
-// 		$('#book').turn('next');
-// });
-
 (function () {
 
     'use strict';
@@ -38,10 +22,8 @@
         },
         resize: function () {
             // reset the width and height to the css defaults
-            if (this.el.style.width) {
             this.el.style.width = '';
             this.el.style.height = '';
-        }
 
             var width = this.el.clientWidth,
                 height = Math.round(width / this.ratio),
@@ -71,6 +53,6 @@
             });
         }
     };
-
     module.init('book');
+    $('#main-container').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 600);
 }());
