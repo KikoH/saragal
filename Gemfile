@@ -43,10 +43,18 @@ gem "cancancan"
 #Pry
 gem "pry-rails"
 
+#Fog
+gem "fog"
+
+#Thin
+gem 'thin'
+
+#Figaro
+gem 'figaro'
+
 #CarrierWave file uploads
 gem 'carrierwave'
 gem 'rmagick'
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
