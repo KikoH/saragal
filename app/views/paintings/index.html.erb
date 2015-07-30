@@ -1,3 +1,7 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "paintings" %>
+<% end %>
+
 <div id="main-container">
 	<div id="book-container">
 		<div id="book">
@@ -18,22 +22,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- <div class="container">
-	<div class="row">
-		<%# @paintings.each do |painting| %>
-		<div class="col-sm-6 col-md-4">
-			<div class="thumbnail">
-				<img src="<%#= painting.image_url %>" alt="...">
-				<div class="caption">
-					<h3> <%#= link_to painting.title, painting_path(painting) %> </h3>
-					<p><%#= painting.description %></p>
-				</div>
-				<%# if painting.addedToCart(painting) %>
-				<h1 style="color:red">SOLD</h1>
-				<%# end %>
-			</div>
-		</div>
-		<%# end %>
-	</div>
--->
