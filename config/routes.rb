@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   resources :photos
   resources :designs
   resources :orders
-  resources :handmades
+
+  resources :handmades, :path => 'artworks' do
+    resources :handmades
+  end
 
   get 'home' => 'homepages#index', :as => :home
 
