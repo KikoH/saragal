@@ -27,7 +27,7 @@ body.overflow {
 	width: 45%;
 	min-width: 480px;
 	max-width: 500px;
-	height: 680px;
+	height: 700px;
 	margin: auto;
 	background-color: black;
 	overflow: hidden;
@@ -155,17 +155,17 @@ body.overflow {
 
 @media screen and (max-width: 640px) {
 	#homepage {
-		width: 45%;
+		width: 100%;
 		min-width: 280px;
-		height: 400px;
+		height: 520px;
 		margin: auto;
 		background-color: black;
 		overflow: hidden;
 	}
 
 	#homepage img {
-		width: 50%;
-		height: 45%;
+		width: 40%;
+		height: 42%;
 		float: left;
 		margin: 5% 5%;
 	}
@@ -175,14 +175,14 @@ body.overflow {
 	}
 
 	.infotop {
-		line-height: 17px;
-		margin: 10% 10%;
+		line-height: 20px;
+		margin: 5% 5%;
 		font-size: 12px
 	}
 
 	.infobottom {
-		line-height: 14px;
-		margin: 10% 10%;
+		line-height: 22px;
+		margin: 10% 5%;
 		font-size: 12px;
 	}
 }
