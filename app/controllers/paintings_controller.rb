@@ -18,7 +18,6 @@ class PaintingsController < ApplicationController
 	def create
 		@painting = Painting.new(painting_params)
 		@painting.user_id = current_user.id
-		binding.pry
 		if @painting.save
 			redirect_to paintings_path
 		else
@@ -46,6 +45,4 @@ class PaintingsController < ApplicationController
 	def painting_params
 		params.require(:painting).permit(:title, :description, :price, :user_id, :image, :order_id)
 	end
-
-
 end
