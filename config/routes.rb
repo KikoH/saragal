@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   resources :designs
   resources :orders
 
+  resources :handmades, :path => 'artworks' do
+    resources :handmades
+  end
+
   get 'home' => 'homepages#index', :as => :home
 
   get 'login' => 'user_sessions#new', as: :login
