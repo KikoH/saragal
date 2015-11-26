@@ -155,7 +155,6 @@ body.overflow {
 
 @media screen and (max-width: 640px) {
 	#homepage {
-		width: 100%;
 		min-width: 400px;
 		height: 520px;
 		margin: auto;
@@ -164,8 +163,8 @@ body.overflow {
 	}
 
 	#homepage img {
-		width: 40%;
-		height: 42%;
+		width: 30%;
+		height: 32%;
 		float: left;
 		margin: 5% 5%;
 	}
