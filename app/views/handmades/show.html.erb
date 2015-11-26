@@ -1,0 +1,17 @@
+<div class="container-fluid fill">
+	<div class="thumbnail">
+		<%= image_tag @handmade.image_url(:large) %>
+		<div class="caption text-center">
+			<h1> <%= @handmade.title %> </h1>
+			<p><%= @handmade.description %></p>
+			<a href="mailto:saragazzaz@gmail.com?subject=Regarding <%= @handmade.title%>" target="_top">
+				<button class="btn btn-success">Contact Me about this</button>
+			</a>
+		</div>
+		<% content_for :show do %>
+		<% if current_user.present? && current_user.admin %>
+		<%= button_to "edit", edit_handmade_path(@handmade), method: :get, class: "btn" %>
+		<%= button_to "Delete", @handmade, method: :delete, data: { confirm: "Are you sure you want to delete this art?" }, class: "btn" %>
+		<% end %>
+		<%end %>
+	</div>
