@@ -1,5 +1,7 @@
 body {
-	background-image: url("https://s3.amazonaws.com/saragallery/5.jpg");
+	background-image: url("https://s3.amazonaws.com/saragallery/backCropped.bmp");
+	background-repeat: no-repeat;
+	background-size: cover;
 	margin: 0;
 	height: 100%;
 	overflow: hidden;
@@ -13,7 +15,7 @@ body.overflow {
 }
 
 .fullname {
-	color: white;
+	color: #626366;
 }
 
 .errors {
@@ -24,12 +26,17 @@ body.overflow {
 /* Homepage Section*/
 
 #homepage {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
 	width: 45%;
 	min-width: 480px;
 	max-width: 500px;
 	height: 700px;
 	margin: auto;
-	background-color: black;
+	background-color: white;
 	overflow: hidden;
 }
 
@@ -43,14 +50,14 @@ body.overflow {
 .infotop {
 	line-height: 26px;
 	margin: 5% 10%;
-	color: beige;
+	color: #626366;
 	font-size: 15px;
 }
 
 .infobottom {
 	line-height: 27px;
 	margin: 5% 10%;
-	color: beige;
+	color: #626366;
 	font-size: 15px;
 }
 
@@ -164,7 +171,7 @@ body.overflow {
 
 	#homepage img {
 		width: 30%;
-		height: 32%;
+
 		float: left;
 		margin: 5% 5%;
 	}
