@@ -166,11 +166,12 @@ li:hover {
 
 @media screen and (max-width: 640px) {
 	#homepage {
-		min-width: 400px;
-		height: 520px;
+		min-width: 395px;
+		height: 508px;
 		margin: auto;
 		overflow: hidden;
 		z-index: -1;
+		opacity: 0.9;
 	}
 
 	#homepage img {
