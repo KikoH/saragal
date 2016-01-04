@@ -3,14 +3,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
-	height: 100vh;
 	overflow: hidden;
+	background-position: fixed;
 }
 
 body.overflow {
-	background-image: url("https://s3.amazonaws.com/saragallery/5.jpg");
-	margin: 0;
-	height: 100%;
 	overflow: auto;
 }
 
