@@ -1,10 +1,9 @@
 body {
 	background-image: url("https://s3.amazonaws.com/saragallery/backCropped.bmp");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100vh;
 	margin: 0;
 	overflow: hidden;
-	background-position: fixed;
 }
 
 body.overflow {
