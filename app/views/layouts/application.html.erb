@@ -14,10 +14,10 @@
 		<div id="sidebar-wrapper">
 			<ul class="sidebar-nav">
 				<li class="sidebar-brand">
-					<%= link_to "Sara Gazzaz", root_path %>
+					<%= link_to image_tag("https://s3.amazonaws.com/saragallery/logo.png", :class => "logo"), root_path %>
 				</li>
 				<% if current_user %>
-				<li>
+				<li class="firstList">
 					<span class="fullname"><%= current_user.full_name %></span>
 				</li>
 				<li>
@@ -29,7 +29,7 @@
 					<%= link_to "Logout", :logout, method: :post %>
 				</li>
 				<% else %>
-				<li>
+				<li class="firstList">
 					<%= link_to "Register", new_user_path %>
 				</li>
 				<li>
@@ -38,6 +38,9 @@
 				<% end %>
 				<li>
 					-------------
+				</li>
+				<li>
+					<%= link_to 'About me', aboutme_path %>
 				</li>
 				<li>
 					<%= link_to 'Paintings', paintings_path %>
@@ -61,7 +64,7 @@
 				</li>
 				<li>
 					<a href="mailto:saragazzaz@gmail.com?" target="_top">
-						<button class="btn btn-success">Contact me</button>
+						<button class="btn btn-success">Contact Me</button>
 					</a>
 				</li>
 				<% if current_user.present? && current_user.admin %>

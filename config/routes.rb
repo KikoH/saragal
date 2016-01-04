@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
 
   get 'home' => 'homepages#index', :as => :home
+  get 'aboutme' => 'homepages#aboutme', :as => :aboutme
 
   get 'login' => 'user_sessions#new', as: :login
   post 'logout' => 'user_sessions#destroy', as: :logout

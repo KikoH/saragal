@@ -1,8 +1,9 @@
 body {
-	background-image: url("https://s3.amazonaws.com/saragallery/backCropped.bmp");
-	background-repeat: no-repeat;
-	background-size: 100% 100vh;
-	margin: 0;
+	background: url("https://s3.amazonaws.com/saragallery/backCropped.bmp") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	overflow: hidden;
 }
 
@@ -10,8 +11,16 @@ body.overflow {
 	overflow: auto;
 }
 
+.logo {
+	position: absolute;
+}
+
 .fullname {
 	color: #626366;
+}
+
+.firstList {
+	margin-top: 120px;
 }
 
 .errors {
@@ -41,6 +50,11 @@ li:hover {
 }
 
 #homepage img {
+	width: 100%;
+	height: 100%;
+}
+
+#aboutme img {
 	width: 40%;
 	height: 40%;
 	float: left;
