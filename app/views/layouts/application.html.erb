@@ -4,110 +4,22 @@
 	<title>Sara Gazzaz portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
 </head>
-<body class="<%= @overflow ? 'overflow' : ''%>">
-	<div id="wrapper">
-		<!-- Sidebar -->
-		<div id="sidebar-wrapper">
-			<ul class="sidebar-nav">
-				<li class="sidebar-brand">
-					<%= link_to image_tag("https://s3.amazonaws.com/saragallery/logo.png", :class => "logo"), root_path %>
-				</li>
-				<% if current_user %>
-				<li class="firstList">
-					<span class="fullname"><%= current_user.full_name %></span>
-				</li>
-				<li>
-					<% if current_user %>
-					<%= link_to "Edit Profile", edit_user_path(current_user.id) %>
-					<% end %>
-				</li>
-				<li>
-					<%= link_to "Logout", :logout, method: :post %>
-				</li>
-				<% else %>
-				<li class="firstList">
-					<%= link_to "Register", new_user_path %>
-				</li>
-				<li>
-					<%= link_to "Login", :login %>
-				</li>
-				<% end %>
-				<li>
-					-------------
-				</li>
-				<li>
-					<%= link_to 'About me', aboutme_path %>
-				</li>
-				<li>
-					<%= link_to 'Paintings', paintings_path %>
-				</li>
-				<li>
-					<%= link_to "Graphic Design", designs_path %>
-				</li>
-				<li>
-					<%= link_to "Photography", photos_path %>
-				</li>
-				<li>
-					<%= link_to "Handmade Art", handmades_path %>
-				</li>
-				<li>
-					-------------
-				</li>
-				<li>
-					<a href="https://app.box.com/s/txzs4oqktpc8au3wo7uezpwlhwwoaqnn" target="_blank">
-					<button class="btn btn-primary resumebtn">My Resume</button>
-					</a>
-				</li>
-				<li>
-					<a href="mailto:saragazzaz@gmail.com?" target="_top">
-						<button class="btn btn-success contactbtn">Contact Me</button>
-					</a>
-				</li>
-				<% if current_user.present? && current_user.admin %>
-				<li>
-					----Admin----
-				</li>
-				<li>
-					<%= link_to "All users", users_path %>
-				</li>
-				<li>
-					<%= link_to "Add painting", new_painting_path %>
-				</li>
-				<li>
-					<%= link_to "Add design", new_design_path %>
-				</li>
-				<li>
-					<%= link_to "Add photo", new_photo_path %>
-				</li>
-				<li>
-					<%= link_to "Add Handmade art", new_handmade_path %>
-				</li>
-				<li>
-					<%= yield :show %>
-				</li>
-				<% end %>
-			</ul>
-		</div>
-		<!-- /#sidebar-wrapper -->
-		<a href="#menu-toggle" class="btn" id="menu-toggle"><img src="https://s3.amazonaws.com/saragallery/menu.png" alt=""></a>
-		<div>
-			<p id="notice"><%= flash[:notice] %></p>
-			<p id="alert"><%= flash[:alert] %></p>
+<body>
+	<div class="main">
+		<div>	
+			<h1 class='coming-soon'>Coming Soon...</h1>
 		</div>
 
-		<%= yield %>
-		<%= yield :javascript_includes %>
-
-		<!-- Menu Toggle Script -->
-		<script>
-			$("#menu-toggle").click(function(e) {
-				e.preventDefault();
-				$("#wrapper").toggleClass("toggled");
-			});
-		</script>
-	</body>
-	</html>
+		<div class="email">
+			<a href="mailto:saragazzaz@gmail.com">
+				<i class="fa fa-envelope fa-3x"></i>
+			</a>
+		</div>
+	</div>	
+</body>
+</html>
